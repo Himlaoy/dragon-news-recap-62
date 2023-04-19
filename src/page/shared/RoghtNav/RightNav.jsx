@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, ListGroup } from 'react-bootstrap';
 import { FaBeer, FaFacebook, FaGoogle, FaInstagram, FaTwitter } from 'react-icons/fa';
 import Qzone from '../Qzone/Qzone';
+import bg1 from '../../../assets/bg.png'
 
 const RightNav = () => {
     return (
@@ -17,8 +18,8 @@ const RightNav = () => {
                 <ListGroup.Item><FaGoogle className='me-2'></FaGoogle>Google</ListGroup.Item>
             </ListGroup>
             <Qzone></Qzone>
-            <div>
-                <img src="" alt="" />
+            <div className='mt-4'>
+                <img src={bg1} alt="" />
             </div>
         </div>
     );
