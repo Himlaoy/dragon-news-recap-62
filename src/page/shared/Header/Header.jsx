@@ -36,10 +36,10 @@ const Header = () => {
                             </Nav>
                             <Nav>
                                 { user && <Nav.Link href="#deets"><FaUserCircle style={{fontSize:"2rem"}}></FaUserCircle></Nav.Link>}
-                                <Nav.Link eventKey={2} href="#memes">
+                                
                                { user? <Button variant="secondary">LogOut</Button>:
-                               <Button variant="secondary">Login</Button>}
-                                </Nav.Link>
+                               <Link to="/login"><Button variant="secondary">Login</Button></Link>}
+                               
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

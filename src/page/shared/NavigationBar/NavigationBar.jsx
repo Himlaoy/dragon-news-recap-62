@@ -1,5 +1,5 @@
-import React from 'react';
 import React, { useContext } from 'react';
+
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
@@ -22,11 +22,11 @@ const NavigationBar = () => {
                             <Nav.Link href="#pricing">Career</Nav.Link>
                         </Nav>
                         <Nav>
-                            {user && <Nav.Link href="#deets"><FaUserCircle style={{ fontSize: "2rem" }}></FaUserCircle></Nav.Link>}
-                            <Nav.Link eventKey={2} href="#memes">
+                            {user && <FaUserCircle style={{ fontSize: "2rem" }}></FaUserCircle>}
+                            
                                 {user ? <Button variant="secondary">LogOut</Button> :
                                     <Button variant="secondary">Login</Button>}
-                            </Nav.Link>
+                            
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
