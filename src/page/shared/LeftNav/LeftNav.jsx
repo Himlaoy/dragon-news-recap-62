@@ -15,12 +15,12 @@ const LeftNav = () => {
     }, [])
 
     return (
-        <div>
-            <h4>All category</h4>
+        <div className='mt-4'>
+            <h4 className='bg-success  p-2 rounded' style={{width:'150px'}}>All category</h4>
             <div>
                 {
                     category.map(cate => <p cate={cate.id}>
-                        <Link to={`/${cate.id}`} className='text-decoration-none text-black'>{cate.name}</Link>
+                        <Link to={`/category/${cate.id}`} className='text-decoration-none text-black'>{cate.name}</Link>
                     </p> )
                 }
             </div>
