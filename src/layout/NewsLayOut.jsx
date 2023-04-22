@@ -3,7 +3,7 @@ import Header from '../page/shared/Header/Header';
 import Footer from '../page/shared/Footer/Footer';
 import { Col, Container, Row } from 'react-bootstrap';
 import RightNav from '../page/shared/RoghtNav/RightNav';
-import LeftNav from '../page/shared/LeftNav/LeftNav';
+
 import { Outlet } from 'react-router-dom';
 
 const NewsLayOut = () => {
